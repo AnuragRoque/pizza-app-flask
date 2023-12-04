@@ -6,8 +6,7 @@ Databse Used: PostgreSQL
 
 Demonstration Video 1:
 
-
-https://drive.google.com/drive/folders/1Xb9cEjyZaJDmwGJAYCbzv9EAa3M1jeLt
+https://drive.google.com/file/d/1OnivZv_V1VxBb_qIq7bzcVMZw9GYic2J/view?usp=sharing
 
 Demonstration Video 2:
 
