@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delivery App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Pizza Delivery App</h1>
+
+        <div id="orderForm">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your name">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Your phone number">
+
+            <label for="address">Address:</label>
+            <textarea id="address" placeholder="Your address"></textarea>
+
+            <h2>Order Information</h2>
+            <label for="pizzaName">Select Pizza:</label>
+            <select id="pizzaName">
+                <option value="Margherita">Margherita</option>
+                <option value="Farmhouse">Farmhouse</option>
+                <option value="Onion Cheese">Onion Cheeze</option>
+                <option value="Chicken Pizza">Chicken Pizza</option>
+                <option value="Veg Pizza">Veg Pizza</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" placeholder="Quantity">
+
+            <button onclick="placeOrder()">Place Order</button>
+        </div>
+
+        <div id="orderStatus">
+            <h2>Order Status</h2>
+            <label for="orderId">Order ID:</label>
+            <input type="text" id="orderId" placeholder="Order ID">
+
+            <button onclick="checkOrderStatus()">Check Status</button>
+        </div>
+
+        <div id="updateStatus">
+            <h2>Update Status (Employee)</h2>
+            <label for="updateOrderId">Order ID:</label>
+            <input type="text" id="updateOrderId" placeholder="Order ID">
+
+            <button onclick="updateDeliveryStatus()">Update Status</button>
+        </div>
+    </div>
+
+    <!-- <link rel="script" href="{{ url_for('static', filename='app.js') }}"> -->
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
