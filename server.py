@@ -33,9 +33,12 @@ def place_order():
         pizza_name = data.get('pizza_name')
         quantity = int(data.get('quantity'))
 
-    
-        if quantity <= 0:
+        # Intentially bug introduced for ordering more than one quantity
+        if quantity <=0 :
             raise ValueError('Quantity should be greater than 0.')
+           
+        # if quantity <= 0:
+        #     raise ValueError('Quantity should be greater than 0.')
     
     # Create a new PizzaOrder instance
         new_order = PizzaOrder(pizza_name=pizza_name, quantity=quantity, status='pending')
